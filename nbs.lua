@@ -57,7 +57,7 @@ function nbs.parse_header(file)
   return data
 end
 function nbs.parse_notes(file,version)
-  notes={}
+  local notes={}
   for current_tick in nbs.jump(file) do
     for current_layer in nbs.jump(file) do
       if current_layer==nil then break end
